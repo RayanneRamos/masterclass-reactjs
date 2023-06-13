@@ -6,10 +6,10 @@ export function Home() {
   return (
     <div className="layout">
       <aside className="sidebar">
-      <img className='logo' src={logoImage} alt="Logo do Twitter" />
+        <img className='logo' src={logoImage} alt="Logo do Twitter" />
         <nav className='main-navigation'>
           <a className='active' href=''>
-            <House weight='fill'/>
+            <House weight='fill' />
             Home
           </a>
           <a href=''>
@@ -44,7 +44,19 @@ export function Home() {
         <button className='new-tweet' type='button'>Tweet</button>
       </aside>
       <div className="content">
-        
+        <main className='timeline'>
+          <div className='timeline-header'>
+            Home
+            <Sparkle />
+          </div>
+          <form className='new-tweet-form'>
+            <label htmlFor='tweet'>
+              <img src='https://github.com/RayanneRamos.png' alt='Rayanne Ramos' />
+              <textarea id='tweet' placeholder="What's happening?" />
+            </label>
+            <button type='submit'>Tweet</button>
+          </form>
+        </main>
       </div>
     </div>
   )
