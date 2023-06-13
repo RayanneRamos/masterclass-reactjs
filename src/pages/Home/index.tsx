@@ -2,6 +2,7 @@ import { Tweet } from "../../components/Tweet";
 import { Sidebar } from "../../components/Sidebar";
 import "./styles.css";
 import { Header } from "../../components/Header";
+import { Separator } from "../../components/Separator";
 
 export function Home() {
   return (
@@ -20,7 +21,7 @@ export function Home() {
             </label>
             <button type="submit">Tweet</button>
           </form>
-          <div className="separator" />
+          <Separator />
           <Tweet />
           <Tweet />
           <Tweet />
