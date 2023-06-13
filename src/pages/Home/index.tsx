@@ -1,6 +1,7 @@
 import logoImage from '../../assets/logo.svg'
 import { Bell, BookmarkSimple, DotsThreeCircle, Envelope, FileText, Hash, House, Sparkle, User } from 'phosphor-react'
 import './styles.css'
+import { Tweet } from '../../components/Tweet'
 
 export function Home() {
   return (
@@ -57,6 +58,10 @@ export function Home() {
             <button type='submit'>Tweet</button>
           </form>
           <div className='separator' />
+          <Tweet />
+          <Tweet />
+          <Tweet />
+          <Tweet />
         </main>
       </div>
     </div>
