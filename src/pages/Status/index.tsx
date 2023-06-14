@@ -3,6 +3,7 @@ import { Header } from "../../components/Header";
 import { Separator } from "../../components/Separator";
 import { Tweet } from "../../components/Tweet";
 import "./styles.css";
+import { PaperPlaneRight } from "phosphor-react";
 
 export function Status() {
   const [newAnswers, setNewAnswers] = useState("");
@@ -42,7 +43,10 @@ export function Status() {
             onChange={(event) => setNewAnswers(event.target.value)}
           />
         </label>
-        <button type="submit">Answer</button>
+        <button type="submit">
+          <PaperPlaneRight />
+          <span>Answer</span>
+        </button>
       </form>
       {answers.map((answer) => {
         return <Tweet key={answer} content={answer} />;
