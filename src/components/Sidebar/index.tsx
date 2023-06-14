@@ -10,16 +10,17 @@ import {
 } from "phosphor-react";
 import logoImage from "../../assets/logo.svg";
 import "./styles.css";
+import { NavLink } from "react-router-dom";
 
 export function Sidebar() {
   return (
     <aside className="sidebar">
       <img className="logo" src={logoImage} alt="Logo do Twitter" />
       <nav className="main-navigation">
-        <a className="active" href="">
+        <NavLink to="/">
           <House weight="fill" />
           Home
-        </a>
+        </NavLink>
         <a href="">
           <Hash />
           Explore
