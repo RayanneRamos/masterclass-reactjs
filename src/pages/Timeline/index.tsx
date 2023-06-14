@@ -3,6 +3,8 @@ import { Separator } from "../../components/Separator";
 import { Tweet } from "../../components/Tweet";
 import "./styles.css";
 
+const tweets = ["Meu primeiro tweet", "Teste", "Deu certo"];
+
 export function Timeline() {
   return (
     <main className="timeline">
@@ -15,10 +17,9 @@ export function Timeline() {
         <button type="submit">Tweet</button>
       </form>
       <Separator />
-      <Tweet />
-      <Tweet />
-      <Tweet />
-      <Tweet />
+      {tweets.map((tweet) => {
+        return <Tweet key={tweet} content={tweet} />;
+      })}
     </main>
   );
 }
