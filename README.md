@@ -17,7 +17,15 @@
 [TwitterUI](https://masterclass-reactjs-c0j0qpp5m-rayanneramos.vercel.app/) é o projeto desenvolvido durante a masterclass React da [Rocketseat](https://www.rocketseat.com.br/) que foca na tecnologia ReactJS. Consiste em criar o layout do Twitter a página Home e a página de resposta de um tweet, colocar na tela um
 tweet criado pelo usuário e as repostas do usuário também.
 
-## 🧪 Technologies
+## 🌟 Funcionalidades
+
+1. **Home Page**: Tela principal onde o usuário pode ver tweets e interagir com eles. 
+2. **Página de Resposta**: Tela onde o usuário pode visualizar as respostas de outros tweets. 
+3. **Criar Tweet**: O usuário pode criar um tweet e visualizá-lo na tela.
+4. **Interatividade**: O layout é responsivo e interativo, permitindo ver os tweets e suas respectivas respostas em tempo real.
+
+
+## 🧪 Tecnologias
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
